@@ -18,6 +18,7 @@ todo-list/
 ├── .gitignore
 ├── docker-compose.yaml
 ├── Makefile
+├── postman.json - файлик для импорта в постман чтобы  быстро глянуть все запросы
 └── READme.md
 ```
 
