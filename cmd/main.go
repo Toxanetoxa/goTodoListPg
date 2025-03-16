@@ -40,7 +40,7 @@ func main() {
 
 	app.Delete("/tasks/:id", handlers.DeleteTask(db))
 
-	app.Put("/tasks", handlers.UpdateTask(db))
+	app.Put("/tasks/:id", handlers.UpdateTask(db))
 
 	PORT := fmt.Sprintf(":%s", os.Getenv("APP_PORT"))
 	err = app.Listen(PORT)

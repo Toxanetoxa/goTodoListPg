@@ -107,7 +107,9 @@ func DeleteTask(db *pgx.Conn) fiber.Handler {
 			})
 		}
 
-		return c.Status(fiber.StatusOK).JSON(fiber.Map{})
+		return c.Status(fiber.StatusOK).JSON(fiber.Map{
+			"message": "Task deleted successfully",
+		})
 	}
 }
 
